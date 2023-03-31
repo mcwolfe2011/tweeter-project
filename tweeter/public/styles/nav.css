@@ -1,0 +1,37 @@
+nav {
+  color: #fff;
+  background-color: hsl(187, 43%, 44%);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#logo {
+  font-family: 'bungee', 'sans-serif';
+  font-size: 2rem;
+  color: #ffc0cb;
+  text-shadow: 0.5rem 0.5rem rgb(rgb(12, 11, 11))
+}
+
+.write-tweet {
+  color: #ffc0cb;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.write-tweet i {
+  color: #ffc0cb;
+  font-size: 1.5rem;
+}
+
+.write-tweet:hover, .write-tweet i:hover {
+  animation-name: hover-me;
+  animation-duration: 5s;
+}
+
+@keyframes hover-me {
+  from {color: #ffc0cb;;}
+  to {color: #ffff00;}
+}
