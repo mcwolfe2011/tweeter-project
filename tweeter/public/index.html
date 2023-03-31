@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/divider.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/error.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -24,6 +26,8 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/helpers.js"></script>
+    <script type="text/javascript" src="/scripts/scroll.js"></script>
   </head>
 
   <body>
@@ -49,7 +53,7 @@
       <h2>Compose Tweet</h2>
       <form method="POST" action="/tweets/">
         <div class="wrapper">
-          <textarea name="text" id="tweet-text" placeholder="Dreams are falling apart.">What are you humming about?</textarea>
+          <textarea name="text" id="tweet-text" placeholder="Dreams are falling apart."></textarea>
         </div>
         <div class="button-wrapper">
           <button type="submit">Tweet</button>

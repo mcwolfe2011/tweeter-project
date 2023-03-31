@@ -114,10 +114,10 @@ article.tweet header{
   transition: 0.3s linear;
 }
 
-/* footer {
+footer {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
   padding: 0 1rem;
   font-size: 1.8rem;
-} */
+}
