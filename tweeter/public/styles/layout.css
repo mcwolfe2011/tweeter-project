@@ -8,6 +8,8 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -24,3 +26,9 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  max-width: 100rem;
+  width: 90%;
+  margin: auto;
+}
