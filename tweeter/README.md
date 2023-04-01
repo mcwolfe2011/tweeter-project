@@ -17,5 +17,6 @@ This repository is the starter code for the project: Students will fork and clon
 - Express
 - Node 5.10.x or above
 
-["Screenshot on desktop view"](https://github.com/mcwolfe2011/tweeter-project/blob/master/tweeter/docs/desktop-view.png)
-["Screenshot on mobile view"](https://github.com/mcwolfe2011/tweeter-project/blob/master/tweeter/docs/mobile.png)
+## Screenshots
+!["Screenshot on desktop view"](https://github.com/mcwolfe2011/tweeter-project/blob/master/tweeter/docs/desktop-view.png)
+!["Screenshot on mobile view"](https://github.com/mcwolfe2011/tweeter-project/blob/master/tweeter/docs/mobile.png)
