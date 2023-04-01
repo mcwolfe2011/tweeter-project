@@ -27,11 +27,11 @@ const onSubmit = function(event) {
 
   // Error Messages
   if (text === "") {
-    return $(".error-msgs").text("Post cannot be empty!").slideDown().show();
+    return $(".error-msgs").text("🛑Post cannot be empty!🛑").slideDown().show();
   }
 
   if ($counter.val() < 0) {
-    return $(".error-msgs").text("Post cannot exceed over 140 character limit!").slideDown().show();
+    return $(".error-msgs").text("🛑Post cannot exceed over 140 character limit!🛑").slideDown().show();
   }
 
   // Post /tweets
@@ -59,7 +59,7 @@ const createTweetElement = function(tweet) {
       </div>
     </header>
     <div class="tweet-post">
-      <p>${escape(tweet.content.text)}</p>
+      <p>${encodeURIComponent(tweet.content.text)}</p>
     </div>
     <footer>
       <span>

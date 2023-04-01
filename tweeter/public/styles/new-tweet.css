@@ -1,11 +1,25 @@
 .new-tweet {
   padding: 2rem;
   width: 90%;
+  margin: 0 auto;
   max-width: 100rem;
   text-align: center;
   display: none;
   font-size: 2rem;
 }
+
+@media only screen and (min-width: 1024px) {
+  
+  .new-tweet {
+    background-color: #4095a0;
+    width: 100%;
+  }
+
+  .new-tweet h2 {
+    color: #f9eaed;
+  }
+}
+
 
 form {
   width: 100%;
@@ -23,7 +37,7 @@ form {
   resize: none;
   outline: none;
   width: 100%;
-  height: 3.5rem;
+  height: 5rem;
   background-color: transparent;
 }
 
@@ -34,7 +48,7 @@ form {
 }
 
 button {
-  background-color: rgb(6, 154, 180);
+  background-color: #069ab4;
   color: #fff;
   outline: none;
   border: none;
@@ -45,7 +59,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(3, 110, 129);
+  background-color: #036e81;
   transition: 0.3s linear;
 }
 
@@ -59,10 +73,10 @@ button:hover {
 
 article.tweet {
   padding: 2rem;
-  border: 0.2rem solid rgba(199, 219, 235, 1);
+  border: 0.2rem solid #ffc0cb;
   border-radius: 1.5rem;
   margin-bottom: 3rem;
-  background-color: rgba(199, 219, 235, 0.5);
+  background-color: #f9eaed;
   transition: 0.3s linear;
 }
 
@@ -114,10 +128,72 @@ article.tweet header{
   transition: 0.3s linear;
 }
 
+
+
 footer {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
   padding: 0 1rem;
   font-size: 1.8rem;
+} 
+
+
+@media only screen and (max-width: 400px) {
+  
+  #logo, .write-tweet {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  .profile img {
+    width: 10rem;
+    height: auto;
+  }
+
+  .new-tweet {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  #tweet-text {
+    height: 2.5rem;
+  }
+
+  article.tweet {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .user-handle, .name-wrapper span {
+    font-size: 1.2rem;
+  }
+  .name-wrapper img {
+    width: 3rem;
+    height: auto;
+    padding-right: 0.5rem;
+  }
+
+  .tweet-post {
+    font-size: 1.8rem;
+    padding: 2rem 1rem 1rem;
+  }
+
+  .tweet-post::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.15rem;
+    border-radius: 0.5rem;
+    background-color: #000;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
 }

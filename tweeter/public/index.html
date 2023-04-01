@@ -22,50 +22,57 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    <script type="text/javascript" src="/scripts/helpers.js"></script>
     <script type="text/javascript" src="/scripts/scroll.js"></script>
+    <script type="text/javascript" src="/scripts/helperFunctions/helpers.js"></script>
   </head>
 
   <body>
+  <div class="body-wrapper">
     <!-- Top nav bar (fixed) -->
-  <header class="main-header">
-    <div class="divider">
-      <nav>
-        <span id="logo">tweeter</span>
-        <span class="write-tweet">
-          Write Tweet<br>
-          <i class="fa-solid fa-angles-down"></i>
-        </span>
-      </nav>
-      <section class="profile">
-        <div class="user-name">
-          <h2>Miki Mi</h2>
-        </div>
-        <img width="150" height="150" src="/images/profile-hex.png">
+    <header class="main-header">
+      <div class="divider">
+        <nav>
+          <span id="logo">tweeter</span>
+          <span class="write-tweet">
+            Write Tweet<br>
+            <i class="fa-solid fa-angles-down"></i>
+          </span>
+        </nav>
+        <section class="profile">
+          <div class="user-name">
+            <h2>Miki Mi</h2>
+          </div>
+          <img width="150" height="150" src="/images/profile-hex.png">
+        </section>
+      </div>
+      <section class="new-tweet">
+        <p class="error-msgs"></p>
+        <h2>Compose Tweet</h2>
+        <form method="POST" action="/tweets/">
+          <div class="wrapper">
+            <textarea name="text" id="tweet-text" placeholder="Dreams are falling apart. I quit!"></textarea>
+          </div>
+          <div class="button-wrapper">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
       </section>
-    </div>
-    <section class="new-tweet">
-      <p class="error-msgs"></p>
-      <h2>Compose Tweet</h2>
-      <form method="POST" action="/tweets/">
-        <div class="wrapper">
-          <textarea name="text" id="tweet-text" placeholder="Dreams are falling apart."></textarea>
-        </div>
-        <div class="button-wrapper">
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
-  </header>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section id="tweets-container"></section>
+
     </main>
+    </div>
   </body>
 </html>

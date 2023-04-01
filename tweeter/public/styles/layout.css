@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -28,9 +29,27 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
 main {
   max-width: 100rem;
   width: 90%;
   margin: auto;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  
+  .body-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .main-header {
+    width: 40%;
+    margin: 50px 0 0 80px;
+  }
+
+  .container {
+    width: 40%;
+  }
+
 }

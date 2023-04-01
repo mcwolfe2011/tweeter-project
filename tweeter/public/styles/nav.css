@@ -1,18 +1,27 @@
 nav {
-  color: #fff;
-  background-color: hsl(187, 43%, 44%);
-  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
+  height: 10vh;
+  color: #fff;
+  background-color: #4095a0;
+  padding: 2.5rem 1.5rem 0 1.5rem;
   position: relative;
+  z-index: 3;
 }
 
 #logo {
   font-family: 'bungee', 'sans-serif';
-  font-size: 2rem;
+  font-size: 3rem;
   color: #ffc0cb;
-  text-shadow: 0.5rem 0.5rem rgb(rgb(12, 11, 11))
+  text-shadow: 1rem 1rem rgb(rgb(12, 11, 11));
+  padding-top: 10px;
+  animation-name: changed;
 }
+
+#logo:hover {
+  text-shadow: 5px 5px #000;
+}
+
 
 .write-tweet {
   color: #ffc0cb;
@@ -23,7 +32,7 @@ nav {
 
 .write-tweet i {
   color: #ffc0cb;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .write-tweet:hover, .write-tweet i:hover {
